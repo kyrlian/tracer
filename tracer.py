@@ -21,9 +21,11 @@ import random, time, turtle
 # CONFIG
 
 #   GRID
-gridSizeW = 16  # W : x : rows : dont go up too fast, can be really long to complete depending on your hardware
+gridSizeW = 32  # W : x : rows : dont go up too fast, can be really long to complete depending on your hardware - up to 16 is easy, up to 27 is ok, 28/29 never work, 30 ok (seed 1682156647)
+# Size : Seed
+# 30 : 1682156647
 gridSizeH = gridSizeW  # H : y : cols
-gridLevels = 2  # 1-n #KEEP THIS LOW : FINAL GRID SIZE WILL BE GRIDSIZEW^GRIDLEVEL*GRIDSIZEH^GRIDLEVEL
+gridLevels = 1  # 1-n #KEEP THIS LOW : FINAL GRID SIZE WILL BE GRIDSIZEW^GRIDLEVEL*GRIDSIZEH^GRIDLEVEL
 #   REWIND
 allowRewind = True  # Allow rewind, set to False to test all possible solutions, True is more efficient
 rewindMoreSteps = 5  # Number of steps to rewind if I am blocked, 1-10 gives good results
